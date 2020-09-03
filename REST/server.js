@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
   res.send("Hello World, from express");
 });
 
-app.post("/book", (req, res) => {
+app.post("/insert", (req, res) => {
   const book = req.body;
   console.log(book);
   books.push(book);
@@ -42,7 +42,7 @@ app.get("/book/:id", (req, res) => {
   res.json(target);
 });
 
-app.delete("/book/:id", (req, res) => {
+app.delete("/delete/:id", (req, res) => {
   const id = parseInt(req.params.id);
 
   for (var i = 0; i < books.length; i++) {

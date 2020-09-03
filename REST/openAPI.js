@@ -2,7 +2,7 @@ module.exports = {
   openapi: "3.0.1",
   info: {
     version: "1.3.0",
-    title: "Users",
+    title: "REST Api",
     description: "User management API",
     termsOfService: "http://api_url/terms/",
     contact: {
@@ -49,24 +49,24 @@ module.exports = {
               },
             },
           },
-          400: {
-            description: "Missing parameters",
-            content: {
-              "application/json": {
-                schema: {
-                  $ref: "#/components/schemas/Error",
-                },
-                example: {
-                  message: "companyId is missing",
-                  internal_code: "missing_parameters",
-                },
-              },
-            },
-          },
+          // 400: {
+          //   description: "Missing parameters",
+          //   content: {
+          //     "application/json": {
+          //       schema: {
+          //         $ref: "#/components/schemas/Error",
+          //       },
+          //       example: {
+          //         message: "companyId is missing",
+          //         internal_code: "missing_parameters",
+          //       },
+          //     },
+          //   },
+          // },
         },
       },
     },
-    "/book/:id": {
+    "/book": {
       get: {
         tags: ["CRUD operations"],
         description: "Get one book",
@@ -92,24 +92,24 @@ module.exports = {
               },
             },
           },
-          400: {
-            description: "Missing parameters",
-            content: {
-              "application/json": {
-                schema: {
-                  $ref: "#/components/schemas/Error",
-                },
-                example: {
-                  message: "companyId is missing",
-                  internal_code: "missing_parameters",
-                },
-              },
-            },
-          },
+          // 400: {
+          //   description: "Missing parameters",
+          //   content: {
+          //     "application/json": {
+          //       schema: {
+          //         $ref: "#/components/schemas/Error",
+          //       },
+          //       example: {
+          //         message: "companyId is missing",
+          //         internal_code: "missing_parameters",
+          //       },
+          //     },
+          //   },
+          // },
         },
       },
     },
-    "/book/:idd": {
+    "/delete": {
       delete: {
         tags: ["CRUD operations"],
         description: "Delete one book",
@@ -126,33 +126,33 @@ module.exports = {
         ],
         responses: {
           200: {
-            description: "Users were obtained",
+            description: "Delete the book",
             content: {
               "application/json": {
-                schema: {
-                  $ref: "#/components/schemas/All_books",
-                },
+                // schema: {
+                  // $ref: "#/components/schemas/All_books",
+                // },
               },
             },
           },
-          400: {
-            description: "Missing parameters",
-            content: {
-              "application/json": {
-                schema: {
-                  $ref: "#/components/schemas/Error",
-                },
-                example: {
-                  message: "companyId is missing",
-                  internal_code: "missing_parameters",
-                },
-              },
-            },
-          },
+          // 400: {
+          //   description: "Missing parameters",
+          //   content: {
+          //     "application/json": {
+          //       schema: {
+          //         $ref: "#/components/schemas/Error",
+          //       },
+          //       example: {
+          //         message: "Error",
+          //         internal_code: "missing_parameters",
+          //       },
+          //     },
+          //   },
+          // },
         },
       },
     },
-    "/book": {
+    "/insert": {
       post: {
         tags: ["CRUD operations"],
         description: "Create users",
@@ -171,21 +171,28 @@ module.exports = {
         responses: {
           200: {
             description: "Add new book to database",
-          },
-          400: {
-            description: "Invalid parameters",
             content: {
               "application/json": {
                 schema: {
-                  $ref: "#/components/schemas/Error",
-                },
-                example: {
-                  message: "User identificationNumbers 10, 20 already exist",
-                  internal_code: "invalid_parameters",
+                  $ref: "#/components/schemas/All_books",
                 },
               },
             },
           },
+          // 400: {
+          //   description: "Invalid parameters",
+          //   content: {
+          //     "application/json": {
+          //       schema: {
+          //         $ref: "#/components/schemas/Error",
+          //       },
+          //       example: {
+          //         message: "User identificationNumbers 10, 20 already exist",
+          //         internal_code: "invalid_parameters",
+          //       },
+          //     },
+          //   },
+          // },
         },
       },
     },

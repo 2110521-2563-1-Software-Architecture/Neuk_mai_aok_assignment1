@@ -17,7 +17,7 @@ const listBooks = async () => {
 
 const insertBook = async (id, title, author) => {
   var book = { id: parseInt(id), title: title, author: author };
-  let res = await axios.post(`${BASE_URL}/book`,book);
+  let res = await axios.post(`${BASE_URL}/insert`,book);
   console.log(res.data)
   socket.emit('insert',book)
 }
@@ -30,7 +30,7 @@ const getBook = async (id) => {
 };
 
 const deleteBook = async (id) => {
-  let res = await axios.delete(`${BASE_URL}/book/${id}`);
+  let res = await axios.delete(`${BASE_URL}/delete/${id}`);
   console.log(res.data)
 }
 
