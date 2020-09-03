@@ -139,9 +139,9 @@ else if (command == 'watch')
 
 | Function     | gRPC         | REST API   |
 | ---          |     ---      |     ---    |
-| List book    | xxx   | xxx |
-| Insert book  | xxx     | xxx   |
-| Delete book  | xxx     | xxx   |
+| List book    | xxx     | await axios.get(`${BASE_URL}/books`);   |
+| Insert book  | xxx     | await axios.post(`${BASE_URL}/insert`,book);   |
+| Delete book  | xxx     | await axios.delete(`${BASE_URL}/delete/${id}`);   |
 | Watch book   | xxx     | xxx   |
 
 4. What are the main differences between REST API and gRPC?
