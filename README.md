@@ -1,10 +1,10 @@
 # HW1_Software_Arch (REST Api with Swagger)
 ## Things to be delivered:
-1. Screenshots of Swagger for your APIs in 2. 
+## 1. Screenshots of Swagger for your APIs in 2. 
 ![all](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/all.png)
 ![get](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/get.png)
 ![post](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/post.png)
-2. Source codes of 2 and 3.
+## 2. Source codes of 2 and 3.
 
 Server
 ```
@@ -135,7 +135,7 @@ else if (command == 'watch')
   watchBooks();
   
 ```
-3. Compare how to call the methods based on gRPC and REST API side-by-side, e.g. in a Table format as shown below.
+## 3. Compare how to call the methods based on gRPC and REST API side-by-side, e.g. in a Table format as shown below.
 
 | Function     | gRPC         | REST API   |
 | ---          |     ---      |     ---    |
@@ -144,10 +144,12 @@ else if (command == 'watch')
 | Delete book  | `client.delete({id: parseInt(id)}, function(error, empty) {printResponse(error, empty);});`    | await axios.delete(`${BASE_URL}/delete/${id}`);   |
 | Watch book   | `call.on('data', function(book) {console.log(book);});`       | `socket.on('notify',(book) => {console.log(book)})`   |
 
-4. What are the main differences between REST API and gRPC?
+## 4. What are the main differences between REST API and gRPC?
+
   ในส่วนของ REST จะใช้ JSON,XML แต่ใน gRPC จะใช้ Protobuf ซึ่งเก็บข้อมูลในแบบ binary ทำให้ส่งข้อมูลกันได้อย่างรวดเร็ว แต่มีข้อเสียตรงนี้มนุษย์อย่างเราจะอ่านไม่ออก อีกประเด็นหนึ่งที่แตกต่างคือ REST ใช้ HTTP/1.1 แต่ gRPC ใช้ HTTP/2 ซึ่ง HTTP/2 มี Performance ที่ดีกว่ามาก โดยรวมแล้ว gRPC มี Performance ที่ดีกว่า REST 
-5. What is the benefits of introduceinterface in front of the gRPC and REST API of the book services.
-6. Based on the introduced interface, compare how to call the methods based on gRPC and REST API side-by-side, e.g. in a
+  
+## 5. What is the benefits of introduceinterface in front of the gRPC and REST API of the book services.
+## 6. Based on the introduced interface, compare how to call the methods based on gRPC and REST API side-by-side, e.g. in a
 Table format as shown below. 
 
 | Function     | gRPC         | REST API   |
@@ -157,4 +159,4 @@ Table format as shown below.
 | Delete book  | xxx     | xxx   |
 | Watch book   | xxx     | xxx   |
 
-7. Draw a component diagram representing the book services with and without interfaces. 
+## 7. Draw a component diagram representing the book services with and without interfaces. 
