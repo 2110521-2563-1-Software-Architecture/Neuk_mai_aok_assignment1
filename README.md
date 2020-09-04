@@ -139,10 +139,10 @@ else if (command == 'watch')
 
 | Function     | gRPC         | REST API   |
 | ---          |     ---      |     ---    |
-| List book    | xxx     | await axios.get(`${BASE_URL}/books`);   |
-| Insert book  | xxx     | await axios.post(`${BASE_URL}/insert`,book);   |
-| Delete book  | xxx     | await axios.delete(`${BASE_URL}/delete/${id}`);   |
-| Watch book   | xxx     | xxx   |
+| List book    |  `client.list({}, function(error, books) {printResponse(error, books);});`                     | await axios.get(`${BASE_URL}/books`);   |
+| Insert book  | `client.insert(book, function(error, empty) {printResponse(error, empty);});`                  | await axios.post(`${BASE_URL}/insert`,book);   |
+| Delete book  | `client.delete({id: parseInt(id)}, function(error, empty) {printResponse(error, empty);});`    | await axios.delete(`${BASE_URL}/delete/${id}`);   |
+| Watch book   | `call.on('data', function(book) {console.log(book);});`       | `socket.on('notify',(book) => {console.log(book)})`   |
 
 4. What are the main differences between REST API and gRPC?
 5. What is the benefits of introduceinterface in front of the gRPC and REST API of the book services.
