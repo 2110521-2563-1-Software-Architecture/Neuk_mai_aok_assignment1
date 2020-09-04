@@ -145,6 +145,7 @@ else if (command == 'watch')
 | Watch book   | `call.on('data', function(book) {console.log(book);});`       | `socket.on('notify',(book) => {console.log(book)})`   |
 
 4. What are the main differences between REST API and gRPC?
+  ในส่วนของ REST จะใช้ JSON,XML แต่ใน gRPC จะใช้ Protobuf ซึ่งเก็บข้อมูลในแบบ binary ทำให้ส่งข้อมูลกันได้อย่างรวดเร็ว แต่มีข้อเสียตรงนี้มนุษย์อย่างเราจะอ่านไม่ออก อีกประเด็นหนึ่งที่แตกต่างคือ REST ใช้ HTTP/1.1 แต่ gRPC ใช้ HTTP/2 ซึ่ง HTTP/2 มี Performance ที่ดีกว่ามาก โดยรวมแล้ว gRPC มี Performance ที่ดีกว่า REST 
 5. What is the benefits of introduceinterface in front of the gRPC and REST API of the book services.
 6. Based on the introduced interface, compare how to call the methods based on gRPC and REST API side-by-side, e.g. in a
 Table format as shown below. 
