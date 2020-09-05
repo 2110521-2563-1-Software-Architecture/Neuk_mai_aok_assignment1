@@ -162,3 +162,7 @@ Table format as shown below.
 | Watch book   | node interface.js grpc watch     |  -  |
 
 ## 7. Draw a component diagram representing the book services with and without interfaces. 
+without interface
+![non_interface](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/q1/non_interface.png)
+with interface
+![interface](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/q1/interface.png)
