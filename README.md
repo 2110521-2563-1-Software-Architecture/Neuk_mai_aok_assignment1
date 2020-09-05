@@ -154,9 +154,9 @@ Table format as shown below.
 
 | Function     | gRPC         | REST API   |
 | ---          |     ---      |     ---    |
-| List book    | xxx   | xxx |
-| Insert book  | xxx     | xxx   |
-| Delete book  | xxx     | xxx   |
-| Watch book   | xxx     | xxx   |
+| List book    | node client.js list   | node client.js list |
+| Insert book  | node client.js insert id title author     | node client.js insert id title author   |
+| Delete book  | node client.js delete id     | node client.js delete id   |
+| Watch book   | node client.js watch     |  -  |
 
 ## 7. Draw a component diagram representing the book services with and without interfaces. 
