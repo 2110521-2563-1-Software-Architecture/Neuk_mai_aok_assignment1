@@ -156,8 +156,8 @@ Table format as shown below.
 | Function     | gRPC         | REST API   |
 | ---          |     ---      |     ---    |
 | List book    | go client.go list    | node client.js list |
-| Get book    | go client.go get {id} {title} {author}| node client.js get {id} |
-| Insert book  | go client.go insert {id} | node client.js insert {id} {title} {author}  |
+| Get book    | go client.go get {id}| node client.js get {id} |
+| Insert book  | go client.go insert {id} {title} {author}| node client.js insert {id} {title} {author}  |
 | Delete book  | go client.go delete {id}| node client.js delete {id}|
 | Watch book   | go client.go watch |  -  |
 
