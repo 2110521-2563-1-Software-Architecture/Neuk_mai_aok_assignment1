@@ -1,8 +1,8 @@
 # HW1_Software_Arch (REST Api with Swagger)
 ## Things to be delivered:
 ## 1. Screenshots of Swagger for your APIs in 2. 
-![swagger_code](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/q1/swagger_code.png)
-![all](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/q1/all.png)
+![swagger_code](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/q1/swagger_code.png =250x250)
+![all](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/q1/all.png =250x250)
 ## 2. Source codes of 2 and 3.
 
 Server
@@ -163,6 +163,7 @@ Table format as shown below.
 
 ## 7. Draw a component diagram representing the book services with and without interfaces. 
 without interface
-![non_interface](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/q1/non_interface.png)
+![non_interface](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/q1/non_interface.png =250x250)
+
 with interface
-![interface](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/q1/interface.png)
+![interface](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/q1/interface.png =250x250)
