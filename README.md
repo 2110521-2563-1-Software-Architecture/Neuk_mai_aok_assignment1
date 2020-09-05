@@ -149,22 +149,22 @@ else if (command == 'watch')
   ในส่วนของ REST จะใช้ JSON,XML แต่ใน gRPC จะใช้ Protobuf ซึ่งเก็บข้อมูลในแบบ binary ทำให้ส่งข้อมูลกันได้อย่างรวดเร็ว แต่มีข้อเสียตรงนี้มนุษย์อย่างเราจะอ่านไม่ออก อีกประเด็นหนึ่งที่แตกต่างคือ REST ใช้ HTTP/1.1 แต่ gRPC ใช้ HTTP/2 ซึ่ง HTTP/2 มี Performance ที่ดีกว่ามาก โดยรวมแล้ว gRPC มี Performance ที่ดีกว่า REST 
   
 ## 5. What is the benefits of introduce interface in front of the gRPC and REST API of the book services.
-  ลด coupling ระหว่าง class ทำให้ระบบง่ายต่อการพัฒนามากขึ้น, client จะไม่เห็น code ข้างในทำให้ tranparency
+  ลด coupling ระหว่าง class ทำให้ระบบง่ายต่อการพัฒนามากขึ้น, client จะไม่เห็น code ข้างในทำให้ transparency
 ## 6. Based on the introduced interface, compare how to call the methods based on gRPC and REST API side-by-side, e.g. in a
 Table format as shown below. 
 
 | Function     | gRPC         | REST API   |
 | ---          |     ---      |     ---    |
-| List book    | node interface.js grpc list   | node interface.js rest list |
-| Get book    | node interface.js grpc get {id}    | node interface.js rest get {id} |
-| Insert book  | node interface.js grpc insert {id} {title} {author}     | node interface.js rest insert {id} {title} {author}  |
-| Delete book  | node interface.js grpc delete {id}     | node interface.js rest delete {id}   |
-| Watch book   | node interface.js grpc watch     |  -  |
+| List book    | go client.go list    | node client.js list |
+| Get book    | go client.go get {id} {title} {author}| node client.js get {id} |
+| Insert book  | go client.go insert {id} | node client.js insert {id} {title} {author}  |
+| Delete book  | go client.go delete {id}| node client.js delete {id}|
+| Watch book   | go client.go watch |  -  |
 
 ## 7. Draw a component diagram representing the book services with and without interfaces. 
 
-## without interface
-![non_interface](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/q1/non_interface.png)
-
 ## with interface
 ![interface](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/q1/interface.png)
+
+## without interface
+![non_interface](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/q1/non_interface.png)
