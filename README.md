@@ -1,9 +1,8 @@
 # HW1_Software_Arch (REST Api with Swagger)
 ## Things to be delivered:
 ## 1. Screenshots of Swagger for your APIs in 2. 
-![all](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/all.png)
-![get](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/get.png)
-![post](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/post.png)
+![swagger_code](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/q1/swagger_code.png)
+![all](https://github.com/2110521-2563-1-Software-Architecture/Neuk_mai_aok_assignment1/blob/master/photo/q1/all.png)
 ## 2. Source codes of 2 and 3.
 
 Server
