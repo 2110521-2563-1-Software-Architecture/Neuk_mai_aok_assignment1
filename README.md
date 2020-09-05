@@ -156,9 +156,9 @@ Table format as shown below.
 | Function     | gRPC         | REST API   |
 | ---          |     ---      |     ---    |
 | List book    | node interface.js grpc list   | node interface.js rest list |
-| Get book    | node interface.js grpc get <id>    | node interface.js rest get <id> |
-| Insert book  | node interface.js grpc insert <id> <title> <author>     | node interface.js rest insert <id> <title> <author>  |
-| Delete book  | node interface.js grpc delete <id>     | node interface.js rest delete <id>   |
+| Get book    | node interface.js grpc get {id}    | node interface.js rest get {id} |
+| Insert book  | node interface.js grpc insert {id} {title} {author}     | node interface.js rest insert {id} {title} {author}  |
+| Delete book  | node interface.js grpc delete {id}     | node interface.js rest delete {id}   |
 | Watch book   | node interface.js grpc watch     |  -  |
 
 ## 7. Draw a component diagram representing the book services with and without interfaces. 
