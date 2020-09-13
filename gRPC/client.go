@@ -163,6 +163,7 @@ func doList(ctx context.Context, args ...string) {
 		log.Fatalf("List books: %v", err)
 	}
 	fmt.Printf("Server sent %v book(s).\n", len(rs.GetBooks()))
+	fmt.Printf("response time is ", rs.elapsed.total_seconds())
 	printRespAsJson(rs)
 }
 

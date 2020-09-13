@@ -14,7 +14,7 @@
 var grpc = require('grpc');
 
 var booksProto = grpc.loadPackageDefinition('books.proto');
-
+console.log(booksProto);
 var events = require('events');
 var bookStream = new events.EventEmitter();
 
